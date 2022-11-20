@@ -18,8 +18,16 @@ choice
 config MACH_EXYNOS7885_NONE
 	bool "None"
 
+config MACH_EXYNOS7885_JACKPOTLTE_EUR_OPEN
+	bool "Galaxy A8 2018 (SM-A530F)"
+	select EXYNOS_DTBTOOL
+
 config MACH_EXYNOS7885_JACKPOTLTE_JPN_DCM
 	bool "Galaxy Feel2 (SC-02L)"
+	select EXYNOS_DTBTOOL
+
+config MACH_EXYNOS7885_JACKPOT2LTE_EUR_OPEN
+	bool "Galaxy A8+ 2018 (SM-A730F)"
 	select EXYNOS_DTBTOOL
 
 endchoice
